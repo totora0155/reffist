@@ -34,5 +34,6 @@
     "webpack": "^1.12.13"
   },
   "dependencies": {
+    "socket.io-client": "^1.4.5"
   }
 }
