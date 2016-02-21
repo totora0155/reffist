@@ -1,0 +1,38 @@
+{
+  "name": "starred-board",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:background": "webpack src/scripts/background.js app/scripts/background.js --progress",
+    "build:executer": "webpack src/scripts/executer.js app/scripts/executer.js --progress",
+    "watch:background": "chokidar src/scripts/background.js -c 'npm run build:background'",
+    "watch:executer": "chokidar src/scripts/executer.js src/scripts/{modules,components}/*.js -c 'npm run build:executer'",
+    "prestart": "npm-run-all -p build:background build:executer",
+    "start": "npm-run-all -p watch:background watch:executer"
+  },
+  "keywords": [],
+  "author": "nju33",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.5.2",
+    "babel-loader": "^6.2.2",
+    "babel-plugin-syntax-async-functions": "^6.5.0",
+    "babel-plugin-syntax-decorators": "^6.5.0",
+    "babel-plugin-transform-runtime": "^6.5.2",
+    "babel-polyfill": "^6.5.0",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-runtime": "^6.5.0",
+    "chokidar-cli": "^1.2.0",
+    "npm-run-all": "^1.5.1",
+    "rollup": "^0.25.3",
+    "rollup-plugin-babel": "^2.3.9",
+    "webpack": "^1.12.13"
+  },
+  "dependencies": {
+  }
+}
