@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:background": "webpack src/scripts/background.js app/scripts/background.js --progress",
-    "build:executer": "webpack src/scripts/executer.js app/scripts/executer.js --progress",
     "watch:background": "chokidar src/scripts/background.js -c 'npm run build:background'",
-    "watch:executer": "chokidar src/scripts/executer.js src/scripts/{modules,components}/*.js -c 'npm run build:executer'",
     "prestart": "npm-run-all -p build:background build:executer",
     "start": "npm-run-all -p watch:background watch:executer"
   },

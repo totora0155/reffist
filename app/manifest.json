@@ -6,7 +6,6 @@
   "permissions": [
     "http://*/*",
     "https://*/*",
-    "tabs",
     "activeTab"
   ],
   "icons": {
