@@ -1,0 +1,8 @@
+{
+  "extDesc": {
+    "message": "Extension to the Reffist app to open in the URL of the active tab"
+  },
+  "error": {
+    "message": "Please start the Resist app"
+  }
+}

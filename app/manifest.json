@@ -1,7 +1,8 @@
 {
   "manifest_version": 2,
   "name": "Reffist",
-  "description": "Chrome extention for the Reffist",
+  "description": "__MSG_extDesc__",
+  "default_locale": "en",
   "version": "0.1.0.0",
   "permissions": [
     "http://*/*",

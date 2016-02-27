@@ -20,7 +20,7 @@ function showNotification() {
     type: 'basic',
     iconUrl: '/icons/icon48-red.png',
     title: 'Reffist [Chrome]',
-    message: 'Reffistアプリを起動してください',
+    message: chrome.i18n.getMessage('error'),
   }, () => {});
 }
 
