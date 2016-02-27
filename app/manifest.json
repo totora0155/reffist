@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Reffist",
-  "description": "",
+  "description": "Chrome extention for the Reffist",
   "version": "0.1.0.0",
   "permissions": [
     "http://*/*",
@@ -21,7 +21,6 @@
     },
     "default_title": "Reffist"
   },
-  "chrome_url_overrides": {},
   "background": {
     "scripts": ["scripts/background.js"]
   }
